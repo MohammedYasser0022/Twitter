@@ -1,0 +1,1754 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+body {
+    height: 2000px;
+    background-color: white;
+    margin: 0;
+}
+
+.leftside {
+    width: 25%;
+
+}
+
+span {
+    text-decoration: none;
+}
+
+.leftside a {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    color: rgb(16, 23, 28);
+    font-size: 25px;
+    margin-left: 120px;
+}
+
+.leftside i:hover {
+    text-decoration: none;
+    color: #1da1f2;
+}
+
+.leftside a:hover {
+    text-decoration: none;
+    transition: all 1s;
+    width: 200px;
+    margin-right: 60px;
+    border-radius: 50px;
+    background-color: rgba(29, 161, 242, 0.1);
+    text-decoration: none;
+}
+
+.tweet button {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-left: 105px;
+    text-align: center;
+    padding: 10px 60px;
+    background-color: #1da1f2;
+}
+
+.tweet button:hover {
+    background-color: #1e7fba;
+
+}
+
+body::after {
+    content: attr(leftside);
+    position: fixed;
+    left: 25%;
+    bottom: 0;
+    top: 0;
+
+    width: 1px;
+    height: 1500px;
+    background-color: lightskyblue;
+    z-index: 999;
+}
+
+
+
+body::before {
+    content: attr(rightside);
+    background-color: lightskyblue;
+    width: 1px;
+    height: 1500px;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 30%;
+}
+
+
+.twitter {
+    position: relative;
+    border-radius: 99999px;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 160px;
+}
+
+.twitter:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.rightside {
+    z-index: 9999999999;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+}
+
+.rightside .right-search {
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 80%;
+    height: 30px;
+}
+
+.rightside .right-search input {
+    background-color: rgba(119, 136, 153, 0.2);
+    color: gray;
+    width: 100%;
+    height: 30px;
+    border-radius: 9999999px;
+
+
+}
+
+.search-ic {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.rightside .right-search input::placeholder {
+    text-align: left;
+    font-size: 15px;
+    padding-left: 30px;
+
+
+}
+
+.rightside .right-search:hover i {
+    opacity: 0;
+}
+
+.rightside .right-img {
+    position: relative;
+    width: 89%;
+    height: 160px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.rightside .right-img .img-1,
+.rightside .right-img .img-2,
+.rightside .right-img .img-3,
+.rightside .right-img .img-4 {
+    width: 130px;
+    height: 75px;
+    float: left;
+    margin: 2px;
+}
+
+.rightside .right-img .img-5,
+.rightside .right-img .img-6 {
+    width: 130px;
+    height: 75px;
+    float: left;
+    margin: 2px;
+
+}
+
+.rightside .right-img div img {
+    width: 100%;
+    height: 100%;
+}
+
+.rightside .right-img .img-1 img {
+    border-top-left-radius: 10px;
+}
+
+.rightside .right-img .img-3 img {
+    border-top-right-radius: 10px;
+}
+
+.rightside .right-img .img-4 img {
+    border-bottom-left-radius: 10px;
+}
+
+.rightside .right-img .img-6 img {
+    border-bottom-right-radius: 10px;
+}
+
+
+.clr {
+    clear: both;
+}
+
+.rightside .might-know {
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 90%;
+    height: 265px;
+    background-color: whitesmoke;
+}
+
+.rightside .might-know .header {
+    position: relative;
+    width: 100%;
+    height: 35px;
+}
+
+.rightside .might-know .header h2 {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.rightside .might-know .sara-2 h2:hover {
+    text-decoration: underline;
+}
+
+.rightside .might-know .header::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.rightside .might-know .man-1 {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
+
+.rightside .might-know .man-1 .sara {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999999px;
+    background-color: aqua;
+}
+
+.rightside .might-know .man-1 .sara img {
+    width: 100%;
+    height: 100%;
+    border-radius: 99999999px;
+}
+
+.rightside .might-know .man-1 .sara-2 {
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 85%;
+    height: 60px;
+}
+
+.man-1 .sara-2 h2 {
+    margin: 0;
+    margin-top: 8px;
+}
+
+.man-1 .sara-2 button {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: transparent;
+    width: 80px;
+    height: 30px;
+    border: #1da1f2 solid 2px;
+    border-radius: 9999999px;
+    color: #1da1f2;
+    font-size: 13px;
+}
+
+.man-1 .sara-2 button:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.man-1:hover {
+    background-color: rgba(116, 127, 144, 0.2);
+}
+
+.man-1 .sara-3 {
+    width: 70px;
+    height: 20px;
+
+    position: absolute;
+    top: 25px;
+    left: 58px;
+}
+
+.man-1::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #718096;
+    position: absolute;
+    bottom: 0;
+}
+.rightside .might-know .see{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  
+    text-decoration: none;
+    color: #1da1f2;
+}
+.rightside .might-know .see:hover{
+    background-color: rgba(29, 161, 242, 0.1);
+}
+.rightside .might-know .see a{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.rightside .might-know .see a:hover{
+    text-decoration: none;
+}
+
+
+
+/* ------------------------------------------man-2------------------------------------ */
+.rightside .might-know .sara-2 h2:hover {
+    text-decoration: underline;
+}
+
+.rightside .might-know .header::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.rightside .might-know .man-2 {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
+
+.rightside .might-know .man-2 .sara {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999999px;
+    background-color: aqua;
+}
+
+.rightside .might-know .man-2 .sara img {
+    width: 100%;
+    height: 100%;
+    border-radius: 99999999px;
+}
+
+.rightside .might-know .man-2 .sara-2 {
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 85%;
+    height: 60px;
+}
+
+.man-2 .sara-2 h2 {
+    margin: 0;
+    margin-top: 8px;
+}
+
+.man-2 .sara-2 button {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: transparent;
+    width: 80px;
+    height: 30px;
+    border: #1da1f2 solid 2px;
+    border-radius: 9999999px;
+    color: #1da1f2;
+    font-size: 13px;
+}
+
+.man-2 .sara-2 button:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.man-2:hover {
+    background-color: rgba(116, 127, 144, 0.2);
+}
+
+.man-2 .sara-3 {
+    width: 70px;
+    height: 20px;
+
+    position: absolute;
+    top: 25px;
+    left: 58px;
+}
+
+.man-2::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #718096;
+    position: absolute;
+    bottom: 0;
+}
+
+/* -------------------man-3-------------------------- */
+
+
+
+
+
+.rightside .might-know .sara-2 h2:hover {
+    text-decoration: underline;
+}
+
+.rightside .might-know .header::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.rightside .might-know .man-3 {
+    position: relative;
+    width: 100%;
+    height: 65px;
+}
+
+.rightside .might-know .man-3 .sara {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999999px;
+    background-color: aqua;
+}
+
+.rightside .might-know .man-3 .sara img {
+    width: 100%;
+    height: 100%;
+    border-radius: 99999999px;
+}
+
+.rightside .might-know .man-3 .sara-2 {
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 85%;
+    height: 60px;
+}
+
+.man-3 .sara-2 h2 {
+    margin: 0;
+    margin-top: 8px;
+}
+
+.man-3 .sara-2 button {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: transparent;
+    width: 80px;
+    height: 30px;
+    border: #1da1f2 solid 2px;
+    border-radius: 9999999px;
+    color: #1da1f2;
+    font-size: 13px;
+}
+
+.man-3 .sara-2 button:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.man-3:hover {
+    background-color: rgba(116, 127, 144, 0.2);
+}
+
+.man-3 .sara-3 {
+    width: 70px;
+    height: 20px;
+
+    position: absolute;
+    top: 25px;
+    left: 58px;
+}
+
+.man-3::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #718096;
+    position: absolute;
+    bottom: 0;
+}
+/* ---------------trend---------------------- */
+.rightside .trending{
+    position: relative;
+    border-radius:10px ;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 90%;
+    height: 510px;
+    background-color: whitesmoke;
+}
+
+
+.rightside .trending .head{
+    position: relative;
+
+    width: 100%;
+    height: 30px;
+}
+.rightside .trending .head h2{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.rightside .trending .head::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #718096;
+    position: absolute;
+    bottom: 0;
+}
+.trending .head .icon{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 30px;
+    height: 30px;
+}
+.trending .trend,.trending .trend-1,.trending .trend-2{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    
+}
+.trending .trend-3, .trending .trend-4{
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+.trending .trend:hover {
+    background-color: rgba(116, 127, 144, 0.1); 
+}
+.trending .trend .cap-1{
+    color: #718096;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    height: 20px;
+
+}
+
+.trending .trend .cap-1 a{
+        text-decoration: none;
+    color: #718096;
+
+}
+.trending .trend .cap-2{
+    width: 90%;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    text-align: right;
+}
+.trending .trend .cap-2 a{
+text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.trending .trend .cap-3{
+    width: 90%;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.trending .trend .cap-3 a{
+    color: #718096;
+    text-decoration: none;
+
+}
+/* trend-1 */
+
+.trending .trend-1:hover {
+    background-color: rgba(116, 127, 144, 0.1); 
+}
+.trending .trend-1 .cap-1{
+    color: #718096;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    height: 20px;
+
+}
+
+.trending .trend-1 .cap-1 a{
+        text-decoration: none;
+    color: #718096;
+
+}
+.trending .trend-1 .cap-2{
+    width: 90%;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    text-align: right;
+}
+.trending .trend-1 .cap-2 a{
+text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.trending .trend-1 .cap-3{
+    width: 90%;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.trending .trend-1 .cap-3 a{
+    color: #718096;
+    text-decoration: none;
+
+}
+/* trend-2 */
+.trending .trend-2:hover {
+    background-color: rgba(116, 127, 144, 0.1); 
+}
+.trending .trend-2 .cap-1{
+    color: #718096;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    height: 20px;
+
+}
+
+.trending .trend-2 .cap-1 a{
+        text-decoration: none;
+    color: #718096;
+
+}
+.trending .trend-2 .cap-2{
+    width: 90%;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    text-align: right;
+}
+.trending .trend-2 .cap-2 a{
+text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.trending .trend-2 .cap-3{
+    width: 90%;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.trending .trend-2 .cap-3 a{
+    color: #718096;
+    text-decoration: none;
+
+}
+/* trend-3 */
+.trending .trend-3:hover {
+    background-color: rgba(116, 127, 144, 0.1); 
+}
+.trending .trend-3 .cap-1{
+    color: #718096;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    height: 20px;
+
+}
+
+.trending .trend-3 .cap-1 a{
+        text-decoration: none;
+    color: #718096;
+
+}
+.trending .trend-3 .cap-2{
+    width: 90%;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    text-align: right;
+}
+.trending .trend-3 .cap-2 a{
+text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.trending .trend-3 .cap-3{
+    width: 90%;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.trending .trend-3 .cap-3 a{
+    color: #718096;
+    text-decoration: none;
+
+}
+/* trend-4 */
+.trending .trend-4:hover {
+    background-color: rgba(116, 127, 144, 0.1); 
+}
+.trending .trend-4 .cap-1{
+    color: #718096;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 90%;
+    height: 20px;
+
+}
+
+.trending .trend-4 .cap-1 a{
+        text-decoration: none;
+    color: #718096;
+
+}
+.trending .trend-4 .cap-2{
+    width: 90%;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    text-align: right;
+}
+.trending .trend-4 .cap-2 a{
+text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.trending .trend-4 .cap-3{
+    width: 90%;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.trending .trend-4 .cap-3 a{
+    color: #718096;
+    text-decoration: none;
+
+}
+
+.trending .bottom-head{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.trending .bottom-head:hover{
+background-color: rgba(116, 127, 144, 0.1);}
+
+
+.trending .bottom-head a{
+    top: 5px;
+    left: 10px;
+    position: absolute;
+    color: #1da1f2;
+    text-decoration: none;
+    font-size: 15px;
+}
+.rightside .end{
+    text-decoration: none;
+    width: 90%;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.rightside .end a{
+    margin: 5px;
+    color: #718096;
+    
+}
+
+
+
+.rightside .end-2{
+    margin-left: 15px;
+    width: 50%;
+    height: 20px;
+}
+.rightside .end-2 a{
+    text-decoration: none;
+    margin: 4px;
+    color: #718096;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                        center */
+.center {
+    width: 45%;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 30%;
+}
+
+.span-cen {
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: black;
+}
+
+.span-cen span {
+    position: absolute;
+    top: 0;
+    left: 55px;
+    font-size: 16px;
+
+
+}
+
+.span-cen2 span {
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    left: 55px;
+    color: lightslategrey;
+}
+
+.img-cen {
+    width: 100%;
+    height: 160px;
+    background-color: aquamarine;
+
+}
+
+.img-cen img {
+    width: 100%;
+    height: 160px;
+}
+
+.logo1 {
+    width: 100%;
+    height: 50px;
+
+}
+
+.logo1 img {
+    border-radius: 50%;
+    width: 108px;
+    height: 108px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+
+.h1 {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.logo-span {
+    position: absolute;
+    top: 22px;
+    font-size: 12px;
+}
+
+.h1 h2 {
+    font-size: 15px;
+}
+
+.buttons {
+    position: relative;
+    margin-left: 65%;
+    text-align: right;
+    height: 50px;
+    width: 200px;
+}
+
+.buttons .bu-1 {
+    position: absolute;
+    top: 4px;
+    left: 120px;
+}
+
+.buttons .bu-1 button {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #1da1f2;
+    border-radius: 9999999999px;
+    color: #1da1f2;
+}
+
+.bu-1 button:hover {
+    background-color: rgba(44, 157, 227, 0.3);
+}
+
+.buttons .bu-2 {
+    position: absolute;
+    top: 8px;
+    left: 165px;
+}
+
+.bu-2 button {
+    border: 2px solid #1da1f2;
+    border-radius: 999999px;
+    width: 65px;
+    height: 25px;
+    font-size: 12px;
+    color: #1da1f2;
+
+}
+
+.bu-2 button:hover {
+    background-color: rgba(44, 157, 227, 0.3);
+}
+
+.main-p {
+    margin-left: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.main-p2 {
+    position: relative;
+
+    margin-left: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+.main-p2 .m2 {
+    width: 190px;
+    position: absolute;
+    top: 0;
+    left: 140px;
+}
+
+.main-p2 .m3 {
+    width: 170px;
+    position: absolute;
+    top: 0;
+    right: 230px;
+}
+
+.main-p2 i {
+    margin-inline: 5px;
+}
+
+.main-folo {
+    position: relative;
+    top: 8px;
+    width: 100%;
+    height: 20px;
+}
+
+.main-folo .f-1 {
+    width: 90px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.main-folo .f-1 span {
+    color: black;
+
+}
+
+.main-folo .f-1 p {
+    color: lightslategray;
+}
+
+.main-folo a {
+    text-decoration: none;
+}
+
+.main-folo a:hover {
+    text-decoration: underline;
+}
+
+.main-folo .f-2 {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 150px;
+    height: 20px;
+    margin-left: 90px;
+}
+
+.main-logo-2 {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.main-logo-2 .img-logo-2 {
+    position: relative;
+    top: 5px;
+
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.main-logo-2 .img-logo-2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-logo-2 .mla1 {
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    bottom: 3px;
+    left: 25px;
+}
+
+.main-logo-2 .mla1 a {
+    color: lightslategrey;
+    text-decoration: none;
+}
+
+.main-logo-2 .mla1 a:hover {
+    text-decoration: underline;
+}
+
+.pages {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 35px;
+}
+
+.pages ul {
+    position: relative;
+    text-align: center;
+}
+
+.pages ul li {
+    color: #718096;
+    display: inline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
+    width: 25%;
+    height: 35px;
+}
+
+.pages ul .l-1 {
+    color: #1da1f2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pages ul .l-2 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+.pages ul .l-3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.pages ul .l-4 {
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+.pages ul .l-1 span {
+    position: relative;
+    top: 0;
+
+}
+
+.pages ul .tap {
+    border-bottom: 2px solid #1da1f2;
+}
+
+.pages ul .l-2 span {
+    position: relative;
+    top: 5px;
+}
+
+.pages ul .l-3 span {
+    position: relative;
+    top: 5px;
+}
+
+.pages ul .l-4 span {
+    position: relative;
+    top: 5px;
+}
+
+.pages ul .l-1:hover,
+.pages ul .l-2:hover,
+.pages ul .l-3:hover,
+.pages ul .l-4:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    color: #1da1f2;
+}
+
+.main-tweets {
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.main-tweets a {
+    margin-left: 2px;
+    text-decoration: none;
+    color: #718096;
+}
+
+.main-tweet-2 {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.main-tweet-2 .main-head {
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+
+.main-tweet-2 .main-head a {
+
+    text-decoration: none;
+}
+
+
+.main-tweet-2 .main-head h2 {
+    color: black;
+    font-size: 16px;
+}
+
+.main-tweet-2 .main-head .main-2 {
+    width: 90px;
+    height: 20px;
+    color: #718096;
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+.main-head .main-2:hover {
+    text-decoration: underline;
+}
+
+.main-tweet-2 .main-head .main-3 {
+    width: 55px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 95px;
+}
+
+.main-head .main-2 a,
+.main-tweet-2 .main-head .main-3 a {
+    color: #718096;
+}
+
+.main-tweet-2 .main-head .main-3:hover a {
+    text-decoration: underline;
+}
+
+.first-main {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.main-tweet-2 .main-tweet-3 {
+    margin-top: 10px;
+    width: 85%;
+    height: 20px;
+}
+
+.main-tweet-2 .main-tweet-3 p {
+    font-size: 12px;
+    color: #718096;
+}
+
+.main-tweet-2 .main-tweet-4 {
+    margin-top: 25px;
+    width: 100%;
+    height: 20px;
+}
+
+.main-tweet-2 .main-tweet-4 p {
+    font-size: 12px;
+    color: #718096;
+}
+
+.first-main .img-ic {
+    border-radius: 999999999px;
+    border: white#718096 solid 1px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
+
+.first-main .img-ic img {
+    width: 100%;
+    height: 100%;
+}
+
+.first-main .post {
+    border: #1da1f2 solid 1px;
+    border-radius: 10px;
+    margin-left: 80px;
+    width: 85%;
+    height: 390px;
+}
+
+.first-main .post .post-img {
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.first-main .post .post-img img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.first-main .post .post-cap {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 120px;
+    height: 25px;
+}
+
+.first-main .post .post-cap a {
+    color: #718096;
+    text-decoration: none;
+
+}
+
+.first-main .post .post-cap a:hover {
+    text-decoration: underline;
+}
+
+.first-main .post .post-cap-2 {
+    margin-left: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+.first-main .post .post-cap-2 p {
+    color: #718096;
+    font-size: 15px;
+
+}
+
+.first-main .post .post-cap-3 {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 120px;
+    height: 20px;
+}
+
+.first-main .post .post-cap-3 a {
+    color: #718096;
+    text-decoration: none;
+}
+
+.first-main .post .post-cap-3 a:hover {
+    text-decoration: underline;
+}
+
+.first-main .coms {
+    position: relative;
+    width: 85%;
+    height: 20px;
+    margin-left: 80px;
+}
+
+.first-main .coms .coms-ic-1 {
+    margin-left: 60px;
+    width: 50px;
+    height: 20px;
+}
+
+.first-main .coms .coms-ic-1 .comment-ic {
+    position: relative;
+
+
+}
+
+.first-main .coms .coms-ic-2 {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+
+    left: 200px;
+    bottom: 2px;
+}
+
+.first-main .coms .coms-ic-3 {
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    bottom: 2px;
+    left: 340px;
+
+}
+
+.first-main .coms .coms-ic-2 .comment-ic {
+    position: relative;
+
+
+}
+
+.first-main .coms .coms-ic-3 .comment-ic {
+    position: relative;
+
+
+}
+
+.first-main .coms .com-ic-4 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.first-main .coms .coms-ic-4 .comment-ic {
+    position: absolute;
+    bottom: 90px;
+
+
+}
+
+.hide-l {
+    position: relative;
+    bottom: 35px;
+    width: 100%;
+    height: 10px;
+    background-color: lightslategray;
+}
+
+.cen-2 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.cen-2 .cen-main {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.cen-2 .cen-main h2 {
+
+    margin-left: 20px;
+
+}
+
+.cen-2 .cen-main::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #718096;
+    position: absolute;
+    bottom: 0;
+}
+
+.cen-2 .page-1 {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+}
+
+.cen-2 .page-1 .head {
+    position: absolute;
+    margin-left: 80px;
+    width: 15%;
+    height: 30px;
+}
+
+.cen-2 .page-1 .head h2 {
+    color: black;
+    font-size: 17PX;
+}
+
+.cen-2 .page-1 .head a {
+    text-decoration: none;
+
+}
+
+.cen-2 .page-1:hover {
+    background-color: rgba(113, 128, 150, 0.1);
+}
+
+.cen-2 .page-1 .head .head-button {
+    position: absolute;
+    top: 20px;
+    left: 520px;
+
+
+}
+
+.cen-2 .page-1 .head .head-button button {
+    color: #1da1f2;
+    font-size: 12px;
+    border: 2px solid #1da1f2;
+    border-radius: 9999999px;
+    width: 70px;
+    height: 30px;
+
+}
+
+.cen-2 .page-1 .head .head-button button:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.cen-2 .page-1 .head-2 {
+    width: 15%;
+    height: 20px;
+    margin-left: 80px;
+    position: absolute;
+    top: 32px;
+}
+
+.cen-2 .page-1 .head-2 a {
+    text-decoration: none;
+    color: #718096;
+
+}
+
+.cen-2 .page-1 .page-1-img {
+    border-radius: 999999px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.cen-2 .page-1 .page-1-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9999999999px;
+}
+
+.cen-2 .page-1 .main-para {
+    color: #718096;
+    font-size: 12px;
+    top: 60px;
+    position: absolute;
+    left: 80px;
+    width: 85%;
+    height: 50px;
+}
+
+.cen-2 .page-1 .main-para-2 {
+    font-size: 12px;
+    color: #718096;
+    top: 100px;
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    left: 80px;
+}
+
+
+.cen-2 .page-1 .head-2 a:hover {
+    text-decoration: underline;
+
+}
+
+.cen-2 .page-2 {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+}
+
+/* Page-2 */
+.cen-2 .page-2 .head {
+    position: absolute;
+    margin-left: 80px;
+    width: 15%;
+    height: 30px;
+}
+
+.cen-2 .page-2 .head h2 {
+    color: black;
+    font-size: 17PX;
+}
+
+.cen-2 .page-2 .head a {
+    text-decoration: none;
+
+}
+
+.cen-2 .page-2:hover {
+    background-color: rgba(113, 128, 150, 0.1);
+}
+
+.cen-2 .page-2 .head .head-button {
+    position: absolute;
+    top: 20px;
+    left: 520px;
+
+
+}
+
+.cen-2 .page-2 .head .head-button button {
+    color: #1da1f2;
+    font-size: 12px;
+    border: 2px solid #1da1f2;
+    border-radius: 9999999px;
+    width: 70px;
+    height: 30px;
+
+}
+
+.cen-2 .page-2 .head .head-button button:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.cen-2 .page-2 .head-2 {
+    width: 15%;
+    height: 20px;
+    margin-left: 80px;
+    position: absolute;
+    top: 32px;
+}
+
+.cen-2 .page-2 .head-2 a {
+    text-decoration: none;
+    color: #718096;
+
+}
+
+.cen-2 .page-2 .page-1-img {
+    border-radius: 999999px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.cen-2 .page-2 .page-1-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9999999999px;
+}
+
+.cen-2 .page-2 .main-para {
+    color: #718096;
+    font-size: 12px;
+    top: 60px;
+    position: absolute;
+    left: 80px;
+    width: 85%;
+    height: 50px;
+}
+
+.cen-2 .page-2 .main-para-2 {
+    font-size: 12px;
+    color: #718096;
+    top: 100px;
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    left: 80px;
+}
+
+
+.cen-2 .page-2 .head-2 a:hover {
+    text-decoration: underline;
+
+}
+
+.cen-2 .page-2:hover {
+    background-color: rgba(113, 128, 150, 0.1);
+}
+
+/* PAGE -3        ---------------- */
+.cen-2 .page-3 {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+}
+
+.cen-2 .page-3 .head {
+    position: absolute;
+    margin-left: 80px;
+    width: 15%;
+    height: 30px;
+}
+
+.cen-2 .page-3 .head h2 {
+    color: black;
+    font-size: 17PX;
+}
+
+.cen-2 .page-3 .head a {
+    text-decoration: none;
+
+}
+
+.cen-2 .page-3:hover {
+    background-color: rgba(113, 128, 150, 0.1);
+}
+
+.cen-2 .page-3 .head .head-button {
+    position: absolute;
+    top: 20px;
+    left: 520px;
+
+
+}
+
+.cen-2 .page-3 .head .head-button button {
+    color: #1da1f2;
+    font-size: 12px;
+    border: 2px solid #1da1f2;
+    border-radius: 9999999px;
+    width: 70px;
+    height: 30px;
+
+}
+
+.cen-2 .page-3 .head .head-button button:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+.cen-2 .page-3 .head-2 {
+    width: 15%;
+    height: 20px;
+    margin-left: 80px;
+    position: absolute;
+    top: 32px;
+}
+
+.cen-2 .page-3 .head-2 a {
+    text-decoration: none;
+    color: #718096;
+
+}
+
+.cen-2 .page-3 .page-1-img {
+    border-radius: 999999px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.cen-2 .page-3 .page-1-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9999999999px;
+}
+
+.cen-2 .page-3 .main-para {
+    color: #718096;
+    font-size: 12px;
+    top: 60px;
+    position: absolute;
+    left: 80px;
+    width: 85%;
+    height: 50px;
+}
+
+.cen-2 .page-3 .main-para-2 {
+    font-size: 12px;
+    color: #718096;
+    top: 100px;
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    left: 80px;
+}
+
+
+.cen-2 .page-3 .head-2 a:hover {
+    text-decoration: underline;
+
+}
+
+.cen-2 .page-3:hover {
+    background-color: rgba(113, 128, 150, 0.1);
+}
